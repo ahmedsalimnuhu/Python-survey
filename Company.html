@@ -1,0 +1,26 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+Survey
+{% endblock %}
+
+{% block content %}
+<div class="card bg-light instructions">
+    <div class="card-body">
+    <h9><b>Please fill out the following information as it will help us understand how to
+        improve the COP meetings: </b></h9>
+
+    <p>
+
+
+    {% formfields %}
+    </p>
+        <p align="right">  {% next_button %} </p>
+
+<p align="left">
+   <button class="btn btn-danger" name="back" value="1">Back</button> </p>
+
+</div>
+</div>
+{% endblock %}

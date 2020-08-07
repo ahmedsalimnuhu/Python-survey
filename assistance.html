@@ -1,0 +1,25 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+<div class="card bg-light instructions">
+    <div class="card-body">
+
+
+    <p>
+
+
+    {% formfields %}
+
+
+
+  <center> {% next_button %} </center>
+ <button class="btn btn-danger" name="back" value="1">Back</button>
+
+    </div>
+</div>
+{% endblock %}

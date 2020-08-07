@@ -1,0 +1,33 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+ Short   Survey
+{% endblock %}
+
+{% block content %}
+<div class="card bg-light instructions">
+    <div class="card-body">
+Please fill out the following information as it will help us understand your
+        business and decisions better.  The information you provide will also help us
+        improve our next COP meeting. Thank you<p></p>
+
+
+<u> On a scale of 1 to 5,</u> how likely are you to engage in any of the following?
+        <ul>
+            <li>1: Very Unlikely </li> <li>2: Unlikely </li> <li>3: Not Sure</li>
+            <li>4: Likely </li> <li>5: Very Likely</li>
+        </ul>
+    <p>
+
+
+    {% formfields %}
+
+
+  <center> {% next_button %} </center>
+
+
+
+    </div>
+</div>
+{% endblock %}
